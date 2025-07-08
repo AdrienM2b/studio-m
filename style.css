@@ -36,11 +36,7 @@ nav ul {
   list-style: none;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #111;
-  font-weight: 500;
-}
+
 
 .hero {
   display: flex;
