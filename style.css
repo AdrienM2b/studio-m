@@ -36,7 +36,13 @@ nav ul {
   list-style: none;
 }
 
-
+.nav-container{
+  width: "100%";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
 .hero {
   display: flex;
@@ -206,7 +212,7 @@ nav ul {
   color: #7c2ae8;
 }
 
-navlink-footer{
+.navlink-footer{
   color:#fff
 }
 .support-block {
