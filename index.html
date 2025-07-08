@@ -5,63 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studio M – Création d'applications mobiles</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Studio M</h1>
-      <ul>
-        <li><a href="#apps">Applications</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">Nous créons des apps mobiles modernes</div>
-    <div class="sub-hero">Studio indépendant basé au Québec. Design, code, lancement. On s'occupe de tout, de l'idée à la publication.</div>
-    <a href="#contact" class="btn">Travaillons ensemble</a>
+  <header class="header">
+    <div class="container nav">
+      <h1 class="logo">Studio M</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero container">
+      <div class="hero-text">
+        <h2>Créateur<br>d'applications mobiles</h2>
+        <p>Studio indépendant, spécialisé en UX, développement mobile, IA et lancement produit.</p>
+      </div>
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/300x400" alt="Portrait studio">
+      </div>
+    </div>
   </header>
 
-  <section class="section" id="apps">
-    <h2>Nos Applications</h2>
-    <div class="grid">
+  <section class="brands container">
+    <ul>
+      <li>Apple</li><li>Spotify</li><li>Zoom</li><li>Shopify</li><li>Stripe</li>
+    </ul>
+  </section>
+
+  <section class="about container" id="about">
+    <div class="about-text">
+      <h3>Design is more than a job &mdash; it’s a passion.</h3>
+      <p>Chaque projet est pensé pour offrir une expérience simple, rapide et élégante. Studio M conçoit, développe et publie des applications pour les humains avant tout.</p>
+    </div>
+    <div class="metrics">
+      <div><strong>+15</strong><span>Apps publiées</span></div>
+      <div><strong>+20k</strong><span>Utilisateurs actifs</span></div>
+    </div>
+  </section>
+
+  <section class="services container" id="services">
+    <h2>Services</h2>
+    <div class="cards">
       <div class="card">
-        <h3>Avoce</h3>
-        <p>Notes vocales intelligentes. Enregistrez, transcrivez et résumez vos pensées automatiquement.</p>
-        <a href="support.html">Support</a> |
-        <a href="cgv.html">CGV</a> |
-        <a href="mentions-legales.html">Mentions légales</a> |
-        <a href="confidentialite.html">Confidentialité</a>
+        <h4>Design mobile</h4>
+        <p>UI/UX sur mesure pour des apps épurées et intuitives.</p>
+      </div>
+      <div class="card">
+        <h4>Développement</h4>
+        <p>Apps iOS/Android performantes avec React Native.</p>
+      </div>
+      <div class="card">
+        <h4>Marketing & Lancement</h4>
+        <p>Stratégie, visuels, SEO, publication sur stores.</p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="services">
-    <h2>Services sur mesure</h2>
+  <section class="timeline container">
+    <h2>Parcours</h2>
+    <ul>
+      <li><span>2021 &ndash; Présent</span> Créateur & développeur Studio M</li>
+      <li><span>2018 &ndash; 2021</span> UX Designer freelance</li>
+      <li><span>2015 &ndash; 2018</span> Formations web & mobile</li>
+    </ul>
+  </section>
+
+  <section class="portfolio container" id="portfolio">
+    <h2>Projets récents</h2>
     <div class="grid">
-      <div class="card">
-        <h3>Conception & UX</h3>
-        <p>Design d’interfaces modernes, simples et accessibles.</p>
-      </div>
-      <div class="card">
-        <h3>Développement mobile</h3>
-        <p>Apps iOS et Android avec React Native ou Flutter.</p>
-      </div>
-      <div class="card">
-        <h3>Publication & Suivi</h3>
-        <p>Mise en ligne sur les stores, mises à jour, maintenance.</p>
-      </div>
+      <img src="https://via.placeholder.com/300x200" alt="Projet 1">
+      <img src="https://via.placeholder.com/300x200" alt="Projet 2">
+      <img src="https://via.placeholder.com/300x200" alt="Projet 3">
+      <img src="https://via.placeholder.com/300x200" alt="Projet 4">
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <h2>Discutons de votre projet</h2>
-    <p>Nous répondons sous 24h. Que ce soit pour un devis, une idée ou un accompagnement.</p>
-    <a href="mailto:adrien.marchetti.developpeur@gmail.com" class="btn">Contactez-nous</a>
+  <section class="testimonial container">
+    <blockquote>
+      "Studio M nous a aidé à concevoir et lancer notre app avec efficacité. Nous n'aurions pas pu le faire seuls."
+      <footer>— Client satisfait</footer>
+    </blockquote>
+  </section>
+
+  <section class="contact container" id="contact">
+    <h2>Discutons</h2>
+    <p>Disponible pour vos projets ou collaborations. Réponse sous 24h.</p>
+    <a href="mailto:adrien.marchetti.developpeur@gmail.com" class="btn">Envoyer un message</a>
   </section>
 
   <footer class="footer">
-    <p>&copy; 2025 Studio M &mdash; Création d’applications mobiles. Tous droits réservés.</p>
+    <div class="container">
+      <p>&copy; 2025 Studio M. Tous droits réservés.</p>
+    </div>
   </footer>
 </body>
-</html>
 </html>
