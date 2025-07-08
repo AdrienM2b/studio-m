@@ -2,23 +2,40 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Studio M - Accueil</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio M – Accueil</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Studio M</h1>
-  <p>Bienvenue sur la page officielle de Studio M. Retrouvez ici nos applications et leurs documents légaux.</p>
+  <header>
+    <div class="container">
+      <h1>Studio M</h1>
+      <p>Bienvenue sur la page officielle de Studio M. Retrouvez ici nos applications et leurs documents légaux.</p>
+    </div>
+  </header>
 
-  <h2>Nos Applications</h2>
-  <ul>
-    <li>
-      <strong>Avoce</strong><br>
-      <a href="support.html">Support</a> |
-      <a href="cgv.html">Conditions Générales de Vente</a> |
-      <a href="mentions-legales.html">Mentions Légales</a> |
-      <a href="confidentialite.html">Politique de Confidentialité</a>
-    </li>
-    <!-- Répète ce bloc pour chaque app -->
-  </ul>
+  <main class="container">
+    <section class="apps">
+      <h2>Nos Applications</h2>
+      <ul class="app-list">
+        <li class="app-card">
+          <h3>Avoce</h3>
+          <div class="links">
+            <a href="support.html">Support</a>
+            <a href="cgv.html">CGV</a>
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="confidentialite.html">Confidentialité</a>
+          </div>
+        </li>
+        <!-- Tu peux dupliquer ce bloc pour d'autres apps -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Studio M. Tous droits réservés.</p>
+    </div>
+  </footer>
 </body>
 </html>
