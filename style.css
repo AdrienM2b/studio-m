@@ -75,6 +75,26 @@ main {
   margin-bottom: 40px;
 }
 
+.cgv-content section {
+  margin-bottom: 30px;
+}
+
+.cgv-content hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.cgv-content a {
+  color: #4a00e0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cgv-content a:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 20px;
