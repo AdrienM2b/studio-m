@@ -36,6 +36,25 @@ main {
   padding: 40px 0;
 }
 
+.intro, .contact {
+  margin-bottom: 40px;
+}
+
+.contact .btn {
+  display: inline-block;
+  background-color: #4a00e0;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.contact .btn:hover {
+  background-color: #7c2ae8;
+}
+
 .apps h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
