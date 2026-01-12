@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services – Studio M</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Page specific styles */
+        .service-detail {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin-bottom: 150px;
+        }
+
+        .service-detail:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .service-text {
+            flex: 1;
+        }
+
+        .service-visual {
+            flex: 1;
+            height: 400px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-visual::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, rgba(77, 77, 255, 0.1), rgba(176, 38, 255, 0.1));
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tech-tag {
+            padding: 8px 16px;
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            background: rgba(255, 255, 255, 0.02);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="header">
+        <a href="index.html" class="logo">STUDIO M</a>
+        <nav class="nav-links">
+            <a href="index.html#services">Expertise</a>
+            <a href="services.html" style="opacity: 1; color: white;">Services</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <a href="index.html#contact" class="btn-magnetic">Lancer un projet</a>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: 200px;">
+            <h1 class="reveal-text" style="margin-bottom: 100px; text-align: center;">Our Expertise</h1>
+
+            <!-- Service 1 -->
+            <div class="service-detail reveal-text">
+                <div class="service-text">
+                    <h2 style="font-size: 3.5rem; margin-bottom: 1.5rem;">UI/UX Design</h2>
+                    <p style="font-size: 1.2rem; max-width: 90%;">Nous ne dessinons pas seulement des écrans, nous
+                        concevons des systèmes. Chaque interaction est
+                        pensée pour réduire la friction et maximiser l'engagement.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Prototyping</span>
+                        <span class="tech-tag">Design Systems</span>
+                    </div>
+                </div>
+                <div class="service-visual"
+                    style="box-shadow: inset 0 0 50px rgba(176, 38, 255, 0.1); display: flex; align-items: center; justify-content: center;">
+                    <!-- Glass Card Visual -->
+                    <div
+                        style="width: 220px; height: 300px; background: rgba(255,255,255,0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 20px; transform: rotate(-5deg); box-shadow: 0 20px 50px rgba(0,0,0,0.5); transition: transform 0.5s;">
+                        <div
+                            style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #b026ff, #4d4dff); margin-bottom: 20px;">
+                        </div>
+                        <div
+                            style="height: 10px; width: 80%; background: rgba(255,255,255,0.1); border-radius: 5px; margin-bottom: 10px;">
+                        </div>
+                        <div
+                            style="height: 10px; width: 60%; background: rgba(255,255,255,0.1); border-radius: 5px; margin-bottom: 20px;">
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <div
+                                style="flex: 1; height: 80px; background: rgba(255,255,255,0.05); border-radius: 10px;">
+                            </div>
+                            <div
+                                style="flex: 1; height: 80px; background: rgba(255,255,255,0.05); border-radius: 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-detail reveal-text">
+                <div class="service-text">
+                    <h2 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Mobile Development</h2>
+                    <p style="font-size: 1.2rem; max-width: 90%;">Des applications natives ultra-rapides. Nous
+                        maîtrisons l'écosystème mobile pour livrer des
+                        produits robustes, sécurisés et évolutifs.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="service-visual"
+                    style="box-shadow: inset 0 0 50px rgba(77, 77, 255, 0.1); background: #0f0f12; border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center;">
+                    <!-- IDE Visual -->
+                    <div
+                        style="width: 90%; background: #1e1e1e; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <div style="background: #252526; padding: 10px; display: flex; gap: 6px;">
+                            <div style="width: 10px; height: 10px; border-radius: 50%; background: #ff5f56;"></div>
+                            <div style="width: 10px; height: 10px; border-radius: 50%; background: #ffbd2e;"></div>
+                            <div style="width: 10px; height: 10px; border-radius: 50%; background: #27c93f;"></div>
+                        </div>
+                        <div
+                            style="padding: 20px; font-family: 'Courier New', monospace; font-size: 0.85rem; color: #d4d4d4; line-height: 1.5;">
+                            <div><span style="color: #569cd6;">import</span> React <span
+                                    style="color: #569cd6;">from</span> <span style="color: #ce9178;">'react'</span>;
+                            </div>
+                            <div><span style="color: #569cd6;">import</span> { View, Text } <span
+                                    style="color: #569cd6;">from</span> <span
+                                    style="color: #ce9178;">'react-native'</span>;</div>
+                            <br>
+                            <div><span style="color: #569cd6;">const</span> <span style="color: #dcdcaa;">App</span> =
+                                () => {</div>
+                            <div style="padding-left: 20px;"><span style="color: #c586c0;">return</span> (</div>
+                            <div style="padding-left: 40px;">&lt;<span style="color: #4ec9b0;">View</span>
+                                style={styles.container}&gt;</div>
+                            <div style="padding-left: 60px;">&lt;<span style="color: #4ec9b0;">Text</span>&gt;Hello
+                                World&lt;/<span style="color: #4ec9b0;">Text</span>&gt;</div>
+                            <div style="padding-left: 40px;">&lt;/<span style="color: #4ec9b0;">View</span>&gt;</div>
+                            <div style="padding-left: 20px;">);</div>
+                            <div>};</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-detail reveal-text">
+                <div class="service-text">
+                    <h2 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Growth & Strategy</h2>
+                    <p style="font-size: 1.2rem; max-width: 90%;">Une belle app ne suffit pas. Nous vous accompagnons
+                        sur la stratégie de lancement, l'optimisation
+                        pour les stores (ASO) et l'acquisition utilisateur.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ASO</span>
+                        <span class="tech-tag">SEO</span>
+                        <span class="tech-tag">Analytics</span>
+                        <span class="tech-tag">Monetization</span>
+                    </div>
+                </div>
+                <div class="service-visual"
+                    style="box-shadow: inset 0 0 50px rgba(0, 243, 255, 0.1); display: flex; align-items: center; justify-content: center;">
+                    <!-- Growth Graph Visual -->
+                    <div
+                        style="position: relative; width: 80%; height: 60%; border-left: 2px solid rgba(255,255,255,0.1); border-bottom: 2px solid rgba(255,255,255,0.1);">
+                        <div
+                            style="position: absolute; bottom: 0; left: 10%; width: 15%; height: 30%; background: rgba(0, 243, 255, 0.2); border-radius: 4px 4px 0 0;">
+                        </div>
+                        <div
+                            style="position: absolute; bottom: 0; left: 35%; width: 15%; height: 50%; background: rgba(0, 243, 255, 0.4); border-radius: 4px 4px 0 0;">
+                        </div>
+                        <div
+                            style="position: absolute; bottom: 0; left: 60%; width: 15%; height: 75%; background: rgba(0, 243, 255, 0.6); border-radius: 4px 4px 0 0;">
+                        </div>
+                        <div
+                            style="position: absolute; bottom: 0; left: 85%; width: 15%; height: 95%; background: #00f3ff; box-shadow: 0 0 20px #00f3ff; border-radius: 4px 4px 0 0;">
+                        </div>
+
+                        <!-- Trend line SVG -->
+                        <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: visible;">
+                            <path d="M 10 100 Q 50 100 100 50 T 250 10" fill="none" stroke="#fff" stroke-width="2"
+                                stroke-dasharray="5,5" />
+                            <circle cx="250" cy="10" r="4" fill="#fff" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container" style="text-align: center; padding-bottom: 150px;">
+            <h2 class="reveal-text">Un projet en tête ?</h2>
+            <div class="reveal-text" style="margin-top: 3rem;">
+                <a href="index.html#contact" class="btn-magnetic">Démarrer la conversation</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-v2">
+        <div class="container">
+            <div class="footer-big-text">STUDIO M</div>
+            <div
+                style="display: flex; justify-content: center; gap: 2rem; margin-top: -4rem; position: relative; z-index: 2;">
+                <a href="mentions-legales.html" style="color: var(--text-muted); font-size: 0.9rem;">Mentions
+                    Légales</a>
+                <a href="confidentialite.html" style="color: var(--text-muted); font-size: 0.9rem;">Confidentialité</a>
+                <a href="cgv.html" style="color: var(--text-muted); font-size: 0.9rem;">CGV</a>
+            </div>
+            <p style="margin-top: 2rem; font-size: 0.8rem; color: #444;">&copy; 2025 Studio M. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,65 +1,206 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Studio M – Création d'applications mobiles</title>
+  <title>Studio M – Digital Experiences</title>
+  <meta name="description"
+    content="Studio M : Création d'expériences digitales premium. Design, Développement, Stratégie." />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
   <header class="header">
-    <div class="container nav">
-      <h1 class="logo">Studio M</h1>
-    </div>
-    <div class="hero container">
-      <div class="hero-text">
-        <h2>Créateur<br>d'applications mobiles</h2>
-        <p>Studio indépendant, spécialisé en UX, développement mobile, IA et lancement produit.</p>
-      </div>
-      <!-- <div class="hero-image">
-        <img src="https://via.placeholder.com/300x400" alt="Portrait studio">
-      </div> -->
-    </div>
+    <a href="#" class="logo">STUDIO M</a>
+    <nav class="nav-links">
+      <a href="#services">Expertise</a>
+      <a href="services.html">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn-magnetic">Lancer un projet</a>
   </header>
 
-  <section class="services container" id="services">
-    <h2>Services</h2>
-    <div class="cards">
-      <div class="card">
-        <h4>Design mobile</h4>
-        <p>UI/UX sur mesure pour des apps épurées et intuitives.</p>
+  <main>
+    <section class="hero-v2">
+      <div class="hero-bg-glow"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <h1 class="reveal-text">We Craft<br>Digital Legends</h1>
+        <p class="reveal-text" style="transition-delay: 0.2s; max-width: 600px; margin: 2rem auto;">
+          Studio indépendant spécialisé en design UI/UX, développement mobile et stratégie produit. Nous transformons
+          vos idées en réalités immersives.
+        </p>
+        <div class="reveal-text" style="transition-delay: 0.4s; margin-top: 3rem;">
+          <a href="services.html" class="btn-magnetic">Découvrir nos services</a>
+        </div>
       </div>
-      <div class="card">
-        <h4>Développement</h4>
-        <p>Apps iOS/Android performantes avec React Native.</p>
-      </div>
-      <div class="card">
-        <h4>Marketing & Lancement</h4>
-        <p>Stratégie, visuels, SEO, publication sur stores.</p>
+    </section>
+
+    <!-- Infinite Marquee -->
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <span class="marquee-item">UI/UX DESIGN</span>
+        <span class="marquee-item">REACT NATIVE</span>
+        <span class="marquee-item">IOS & ANDROID</span>
+        <span class="marquee-item">STRATEGY</span>
+        <span class="marquee-item">GROWTH</span>
+        <span class="marquee-item">UI/UX DESIGN</span>
+        <span class="marquee-item">REACT NATIVE</span>
+        <span class="marquee-item">IOS & ANDROID</span>
+        <span class="marquee-item">STRATEGY</span>
+        <span class="marquee-item">GROWTH</span>
       </div>
     </div>
-  </section>
 
-  <section class="contact container" id="contact">
-    <h2>Discutons</h2>
-    <p>Disponible pour vos projets ou collaborations. Réponse sous 24h.</p>
-    <a href="mailto:adrien.marchetti.developpeur@gmail.com" class="btn">Envoyer un message</a>
-  </section>
+    <section id="services" class="container">
+      <h2 class="reveal-text">Notre Expertise</h2>
 
-  <footer class="footer">
+      <!-- Bento Grid Layout -->
+      <div class="bento-grid">
+        <!-- Item 1: Large Feature -->
+        <div class="bento-item bento-span-row-2 reveal-text" style="transition-delay: 0.1s;">
+          <div class="bento-bg"
+            style="background: radial-gradient(circle at top right, rgba(176, 38, 255, 0.2), transparent 60%);"></div>
+          <div>
+            <h3>Design System & UI/UX</h3>
+            <p style="margin-top: 1rem;">Nous créons des langages visuels complets. De la typographie aux
+              micro-interactions, chaque détail compte pour une expérience utilisateur inoubliable.</p>
+          </div>
+          <div
+            style="position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); width: 90%; height: 180px; pointer-events: none;">
+            <!-- Horizontal Dashboard Visual -->
+            <div
+              style="width: 100%; height: 100%; background: rgba(255,255,255,0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); border-top-left-radius: 20px; border-top-right-radius: 20px; padding: 20px; box-shadow: 0 -10px 40px rgba(0,0,0,0.3); display: flex; flex-direction: column; gap: 15px;">
+              <!-- Toolbar -->
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; gap: 8px;">
+                  <div style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56;"></div>
+                  <div style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e;"></div>
+                  <div style="width: 12px; height: 12px; border-radius: 50%; background: #27c93f;"></div>
+                </div>
+                <div style="height: 6px; width: 100px; background: rgba(255,255,255,0.1); border-radius: 3px;"></div>
+              </div>
+              <!-- Main Content Area -->
+              <div style="display: flex; gap: 15px; flex: 1;">
+                <!-- Sidebar -->
+                <div
+                  style="width: 25%; height: 100%; background: rgba(255,255,255,0.02); border-radius: 10px; display: flex; flex-direction: column; gap: 8px; padding: 10px;">
+                  <div style="height: 6px; width: 60%; background: rgba(255,255,255,0.1); border-radius: 3px;"></div>
+                  <div style="height: 6px; width: 80%; background: rgba(255,255,255,0.05); border-radius: 3px;"></div>
+                  <div style="height: 6px; width: 70%; background: rgba(255,255,255,0.05); border-radius: 3px;"></div>
+                </div>
+                <!-- Grid Content -->
+                <div style="flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                  <div
+                    style="background: linear-gradient(135deg, rgba(176, 38, 255, 0.2), rgba(77, 77, 255, 0.1)); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
+                  </div>
+                  <div
+                    style="background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
+                  </div>
+                  <div
+                    style="background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
+                  </div>
+                  <div
+                    style="background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
+                  </div>
+                  <div
+                    style="background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
+                  </div>
+                  <div
+                    style="background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Item 2: Mobile Dev -->
+        <div class="bento-item reveal-text" style="transition-delay: 0.2s;">
+          <div class="bento-bg"
+            style="background: radial-gradient(circle at bottom left, rgba(77, 77, 255, 0.1), transparent 60%);"></div>
+          <div style="position: relative; z-index: 2;">
+            <h3>Mobile Dev</h3>
+            <p>React Native, Firebase. Performance native.</p>
+          </div>
+          <div
+            style="margin-top: auto; width: 100%; height: 120px; background: #1e1e1e; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.05); position: relative; z-index: 2;">
+            <div style="background: #252526; padding: 8px; display: flex; gap: 4px;">
+              <div style="width: 8px; height: 8px; border-radius: 50%; background: #ff5f56;"></div>
+              <div style="width: 8px; height: 8px; border-radius: 50%; background: #ffbd2e;"></div>
+              <div style="width: 8px; height: 8px; border-radius: 50%; background: #27c93f;"></div>
+            </div>
+            <div
+              style="padding: 10px; font-family: 'Courier New', monospace; font-size: 0.6rem; color: #d4d4d4; line-height: 1.4;">
+              <div><span style="color: #569cd6;">const</span> <span style="color: #dcdcaa;">App</span> = () => {</div>
+              <div style="padding-left: 10px;"><span style="color: #c586c0;">return</span> (</div>
+              <div style="padding-left: 20px;">&lt;<span style="color: #4ec9b0;">View</span>&gt;</div>
+              <div style="padding-left: 30px;">&lt;<span style="color: #4ec9b0;">Text</span>&gt;Hello&lt;/<span
+                  style="color: #4ec9b0;">Text</span>&gt;</div>
+              <div style="padding-left: 20px;">&lt;/<span style="color: #4ec9b0;">View</span>&gt;</div>
+              <div style="padding-left: 10px;">);</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Strategy -->
+        <div class="bento-item reveal-text" style="transition-delay: 0.3s;">
+          <div class="bento-bg"
+            style="background: radial-gradient(circle at center, rgba(0, 243, 255, 0.1), transparent 60%);"></div>
+          <div style="position: relative; z-index: 2;">
+            <h3>Strategy</h3>
+            <p>ASO, SEO, Growth. On fait décoller votre app.</p>
+          </div>
+          <div
+            style="margin-top: auto; width: 100%; height: 120px; position: relative; z-index: 2; display: flex; align-items: flex-end; justify-content: space-around; padding-bottom: 10px;">
+            <div style="width: 12%; height: 30%; background: rgba(255,255,255,0.05); border-radius: 3px 3px 0 0;"></div>
+            <div style="width: 12%; height: 50%; background: rgba(255,255,255,0.05); border-radius: 3px 3px 0 0;"></div>
+            <div style="width: 12%; height: 40%; background: rgba(255,255,255,0.05); border-radius: 3px 3px 0 0;"></div>
+            <div
+              style="width: 12%; height: 70%; background: linear-gradient(to top, rgba(0, 243, 255, 0.2), rgba(0, 243, 255, 0.5)); border-radius: 3px 3px 0 0; box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);">
+            </div>
+
+            <!-- Mini Trend line SVG -->
+            <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: visible;">
+              <path d="M 10 100 Q 50 80 100 50 T 200 20" fill="none" stroke="#fff" stroke-width="1.5"
+                stroke-dasharray="3,3" />
+              <circle cx="200" cy="20" r="3" fill="#fff" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container" style="text-align: center;">
+      <h2 class="reveal-text">Ready to scale?</h2>
+      <p class="reveal-text" style="transition-delay: 0.1s;">Votre prochain projet commence ici.</p>
+      <div class="reveal-text" style="transition-delay: 0.2s; margin-top: 3rem;">
+        <a href="mailto:adrien.marchetti.developpeur@gmail.com" class="btn-magnetic">Parlons-en</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-v2">
     <div class="container">
-      <nav>
-        <ul class="nav-container">
-          <li><a class="navlink-footer" href="support.html">Support</a></li>
-          <li><a class="navlink-footer" href="cgv.html">Condition Générales de ventes</a></li>
-          <li><a class="navlink-footer" href="mentions-legales.html">Mentions Légales</a></li>
-          <li><a class="navlink-footer" href="confidentialite.html">Politique de confidentialité</a></li>
-          <li><a class="navlink-footer" href="cgu.html">Politique Générales d'Utilisation</a></li>
-        </ul>
-      </nav>
-      <p>&copy; 2025 Studio M. Tous droits réservés.</p>
+      <div class="footer-big-text">STUDIO M</div>
+      <div
+        style="display: flex; justify-content: center; gap: 2rem; margin-top: -4rem; position: relative; z-index: 2;">
+        <a href="mentions-legales.html" style="color: var(--text-muted); font-size: 0.9rem;">Mentions Légales</a>
+        <a href="confidentialite.html" style="color: var(--text-muted); font-size: 0.9rem;">Confidentialité</a>
+        <a href="cgv.html" style="color: var(--text-muted); font-size: 0.9rem;">CGV</a>
+      </div>
+      <p style="margin-top: 2rem; font-size: 0.8rem; color: #444;">&copy; 2025 Studio M. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

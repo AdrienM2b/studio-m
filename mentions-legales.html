@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentions Légales – Studio M</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>Mentions Légales</h1>
-      <p>Ces mentions s’appliquent au site officiel de <strong>Studio M</strong>, destiné à présenter les applications publiées par le développeur.</p>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Studio M</a>
+      <a href="index.html#contact" class="btn" style="padding: 10px 20px; font-size: 0.9rem;">Contact</a>
     </div>
   </header>
 
-  <main class="container cgv-content">
-    <hr>
+  <main class="container legal-content">
+    <h1>Mentions Légales</h1>
+    <p>Ces mentions s’appliquent au site officiel de <strong>Studio M</strong>, destiné à présenter les applications
+      publiées par le développeur.</p>
+
+    <hr style="border: 0; border-top: 1px solid var(--surface-border); margin: 2rem 0;">
 
     <section>
       <h2>1. Éditeur du site</h2>
@@ -24,11 +35,10 @@
         <strong>Statut :</strong> Travailleur autonome<br>
         <strong>Responsable de la publication :</strong> Adrien Marchetti<br>
         <strong>Province :</strong> Québec<br>
-        <strong>Email de contact :</strong> <a href="mailto:adrien.marchetti.developpeur@gmail.com">adrien.marchetti.developpeur@gmail.com</a>
+        <strong>Email de contact :</strong> <a
+          href="mailto:adrien.marchetti.developpeur@gmail.com">adrien.marchetti.developpeur@gmail.com</a>
       </p>
-    </section>
 
-    <section>
       <h2>2. Hébergement</h2>
       <p>
         Ce site est hébergé par :<br>
@@ -37,29 +47,39 @@
         San Francisco, CA 94107 – USA<br>
         <a href="https://pages.github.com" target="_blank">https://pages.github.com</a>
       </p>
-    </section>
 
-    <section>
       <h2>3. Propriété intellectuelle</h2>
       <p>
-        Tous les contenus présents sur ce site (textes, logos, images, éléments graphiques, etc.) sont la propriété exclusive de Studio M, sauf mention contraire. Toute reproduction ou diffusion sans autorisation écrite est interdite.
+        Tous les contenus présents sur ce site (textes, logos, images, éléments graphiques, etc.) sont la propriété
+        exclusive de Studio M, sauf mention contraire. Toute reproduction ou diffusion sans autorisation écrite est
+        interdite.
       </p>
-    </section>
 
-    <section>
       <h2>4. Responsabilité</h2>
       <p>
-        Studio M décline toute responsabilité en cas d’erreurs, d’inexactitudes ou de mauvaise utilisation des informations présentes sur ce site. L’utilisateur est seul responsable de l’usage qu’il en fait.
+        Studio M décline toute responsabilité en cas d’erreurs, d’inexactitudes ou de mauvaise utilisation des
+        informations présentes sur ce site. L’utilisateur est seul responsable de l’usage qu’il en fait.
       </p>
-    </section>
 
-    <p><a href="index.html">← Retour à l'accueil</a></p>
+      <p style="margin-top: 40px;"><a href="index.html">← Retour à l'accueil</a></p>
+    </section>
   </main>
 
-  <footer>
+  <footer class="footer-v2">
     <div class="container">
-      <p>&copy; 2025 Studio M. Tous droits réservés.</p>
+      <div class="footer-big-text">STUDIO M</div>
+      <div
+        style="display: flex; justify-content: center; gap: 2rem; margin-top: -4rem; position: relative; z-index: 2;">
+        <a href="mentions-legales.html" style="color: var(--text-muted); font-size: 0.9rem;">Mentions
+          Légales</a>
+        <a href="confidentialite.html" style="color: var(--text-muted); font-size: 0.9rem;">Confidentialité</a>
+        <a href="cgv.html" style="color: var(--text-muted); font-size: 0.9rem;">CGV</a>
+      </div>
+      <p style="margin-top: 2rem; font-size: 0.8rem; color: #444;">&copy; 2025 Studio M. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
