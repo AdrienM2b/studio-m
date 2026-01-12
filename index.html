@@ -175,6 +175,71 @@
             </svg>
           </div>
         </div>
+
+        <!-- Item 4: Automation & AI -->
+        <div class="bento-item bento-span-2 reveal-text" style="transition-delay: 0.4s;">
+          <div class="bento-bg"
+            style="background: radial-gradient(circle at center, rgba(255, 38, 168, 0.15), transparent 60%);"></div>
+          <div
+            style="position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem;">
+            <div style="max-width: 40%;">
+              <h3>Automation & AI</h3>
+              <p>Workflows intelligents avec n8n. Connectez vos outils, automatisez vos tâches et intégrez l'IA pour un
+                gain de temps maximal.</p>
+            </div>
+
+            <!-- Workflow Visual Asset -->
+            <div class="workflow-visual"
+              style="flex: 1; height: 180px; position: relative; background: rgba(255,255,255,0.02); border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden;">
+              <!-- Connecting Lines SVG -->
+              <svg width="100%" height="100%" style="position: absolute; top: 0; left: 0;">
+                <!-- Line 1: Trigger to Process -->
+                <path class="flow-line" d="M 60 90 L 160 90" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
+                <!-- Line 2: Process to AI -->
+                <path class="flow-line" d="M 220 90 C 250 90, 250 50, 290 50" stroke="rgba(255,255,255,0.1)"
+                  stroke-width="2" fill="none" />
+                <!-- Line 3: Process to Database -->
+                <path class="flow-line" d="M 220 90 C 250 90, 250 130, 290 130" stroke="rgba(255,255,255,0.1)"
+                  stroke-width="2" fill="none" />
+
+                <!-- Animated Particles -->
+                <circle r="3" fill="#ff26a8">
+                  <animateMotion repeatCount="indefinite" dur="2s" path="M 60 90 L 160 90" />
+                  <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+                </circle>
+                <circle r="3" fill="#ff26a8">
+                  <animateMotion repeatCount="indefinite" dur="2s" begin="1s"
+                    path="M 220 90 C 250 90, 250 50, 290 50" />
+                  <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite" />
+                </circle>
+              </svg>
+
+              <!-- Node 1: Trigger (Webhook) -->
+              <div class="flow-node" style="left: 30px; top: 60px;">
+                <div class="node-icon" style="background: #ffbd2e;">⚡️</div>
+                <div class="node-label">Trigger</div>
+              </div>
+
+              <!-- Node 2: Process (n8n) -->
+              <div class="flow-node" style="left: 160px; top: 60px;">
+                <div class="node-icon" style="background: #ff26a8;">n8n</div>
+                <div class="node-label">Process</div>
+              </div>
+
+              <!-- Node 3: AI (Brain) -->
+              <div class="flow-node" style="left: 290px; top: 20px;">
+                <div class="node-icon" style="background: #00f3ff; font-size: 1.2rem;">🧠</div>
+                <div class="node-label">AI Analysis</div>
+              </div>
+
+              <!-- Node 4: Database -->
+              <div class="flow-node" style="left: 290px; top: 100px;">
+                <div class="node-icon" style="background: #27c93f;">💾</div>
+                <div class="node-label">Store</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
