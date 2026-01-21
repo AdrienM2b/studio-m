@@ -1,271 +1,658 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio M – Digital Experiences</title>
+    <meta
+      name="description"
+      content="Studio M : Création d'expériences digitales premium. Design, Développement, Stratégie."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Studio M – Digital Experiences</title>
-  <meta name="description"
-    content="Studio M : Création d'expériences digitales premium. Design, Développement, Stratégie." />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
-    rel="stylesheet">
-</head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-<body>
-  <!-- Custom Cursor -->
-  <div class="cursor-dot"></div>
-  <div class="cursor-outline"></div>
+    <header class="header">
+      <a href="#" class="logo">STUDIO M</a>
+      <nav class="nav-links">
+        <a href="#services">Expertise</a>
+        <a href="services.html">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn-magnetic">Lancer un projet</a>
+    </header>
 
-  <header class="header">
-    <a href="#" class="logo">STUDIO M</a>
-    <nav class="nav-links">
-      <a href="#services">Expertise</a>
-      <a href="services.html">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a href="#contact" class="btn-magnetic">Lancer un projet</a>
-  </header>
+    <main>
+      <section class="hero-v2">
+        <div class="hero-bg-glow"></div>
+        <div class="container" style="position: relative; z-index: 2">
+          <h1 class="reveal-text">We Craft<br />Digital Legends</h1>
+          <p
+            class="reveal-text"
+            style="transition-delay: 0.2s; max-width: 600px; margin: 2rem auto"
+          >
+            Studio indépendant spécialisé en design UI/UX, développement mobile
+            et stratégie produit. Nous transformons vos idées en réalités
+            immersives.
+          </p>
+          <div
+            class="reveal-text"
+            style="transition-delay: 0.4s; margin-top: 3rem"
+          >
+            <a href="services.html" class="btn-magnetic"
+              >Découvrir nos services</a
+            >
+          </div>
+        </div>
+      </section>
 
-  <main>
-    <section class="hero-v2">
-      <div class="hero-bg-glow"></div>
-      <div class="container" style="position: relative; z-index: 2;">
-        <h1 class="reveal-text">We Craft<br>Digital Legends</h1>
-        <p class="reveal-text" style="transition-delay: 0.2s; max-width: 600px; margin: 2rem auto;">
-          Studio indépendant spécialisé en design UI/UX, développement mobile et stratégie produit. Nous transformons
-          vos idées en réalités immersives.
-        </p>
-        <div class="reveal-text" style="transition-delay: 0.4s; margin-top: 3rem;">
-          <a href="services.html" class="btn-magnetic">Découvrir nos services</a>
+      <!-- Infinite Marquee -->
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <span class="marquee-item">UI/UX DESIGN</span>
+          <span class="marquee-item">REACT NATIVE</span>
+          <span class="marquee-item">IOS & ANDROID</span>
+          <span class="marquee-item">STRATEGY</span>
+          <span class="marquee-item">GROWTH</span>
+          <span class="marquee-item">UI/UX DESIGN</span>
+          <span class="marquee-item">REACT NATIVE</span>
+          <span class="marquee-item">IOS & ANDROID</span>
+          <span class="marquee-item">STRATEGY</span>
+          <span class="marquee-item">GROWTH</span>
         </div>
       </div>
-    </section>
 
-    <!-- Infinite Marquee -->
-    <div class="marquee-container">
-      <div class="marquee-content">
-        <span class="marquee-item">UI/UX DESIGN</span>
-        <span class="marquee-item">REACT NATIVE</span>
-        <span class="marquee-item">IOS & ANDROID</span>
-        <span class="marquee-item">STRATEGY</span>
-        <span class="marquee-item">GROWTH</span>
-        <span class="marquee-item">UI/UX DESIGN</span>
-        <span class="marquee-item">REACT NATIVE</span>
-        <span class="marquee-item">IOS & ANDROID</span>
-        <span class="marquee-item">STRATEGY</span>
-        <span class="marquee-item">GROWTH</span>
-      </div>
-    </div>
+      <section id="services" class="container">
+        <h2 class="reveal-text">Notre Expertise</h2>
 
-    <section id="services" class="container">
-      <h2 class="reveal-text">Notre Expertise</h2>
-
-      <!-- Bento Grid Layout -->
-      <div class="bento-grid">
-        <!-- Item 1: Large Feature -->
-        <div class="bento-item bento-span-row-2 reveal-text" style="transition-delay: 0.1s;">
-          <div class="bento-bg"
-            style="background: radial-gradient(circle at top right, rgba(176, 38, 255, 0.2), transparent 60%);"></div>
-          <div>
-            <h3>Design System & UI/UX</h3>
-            <p style="margin-top: 1rem;">Nous créons des langages visuels complets. De la typographie aux
-              micro-interactions, chaque détail compte pour une expérience utilisateur inoubliable.</p>
-          </div>
+        <!-- Bento Grid Layout -->
+        <div class="bento-grid">
+          <!-- Item 1: Large Feature -->
           <div
-            style="position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); width: 90%; height: 180px; pointer-events: none;">
-            <!-- Horizontal Dashboard Visual -->
+            class="bento-item bento-span-row-2 reveal-text"
+            style="transition-delay: 0.1s"
+          >
             <div
-              style="width: 100%; height: 100%; background: rgba(255,255,255,0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); border-top-left-radius: 20px; border-top-right-radius: 20px; padding: 20px; box-shadow: 0 -10px 40px rgba(0,0,0,0.3); display: flex; flex-direction: column; gap: 15px;">
-              <!-- Toolbar -->
-              <div style="display: flex; align-items: center; justify-content: space-between;">
-                <div style="display: flex; gap: 8px;">
-                  <div style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56;"></div>
-                  <div style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e;"></div>
-                  <div style="width: 12px; height: 12px; border-radius: 50%; background: #27c93f;"></div>
-                </div>
-                <div style="height: 6px; width: 100px; background: rgba(255,255,255,0.1); border-radius: 3px;"></div>
-              </div>
-              <!-- Main Content Area -->
-              <div style="display: flex; gap: 15px; flex: 1;">
-                <!-- Sidebar -->
+              class="bento-bg"
+              style="
+                background: radial-gradient(
+                  circle at top right,
+                  rgba(176, 38, 255, 0.2),
+                  transparent 60%
+                );
+              "
+            ></div>
+            <div>
+              <h3>Design System & UI/UX</h3>
+              <p style="margin-top: 1rem">
+                Nous créons des langages visuels complets. De la typographie aux
+                micro-interactions, chaque détail compte pour une expérience
+                utilisateur inoubliable.
+              </p>
+            </div>
+            <div
+              style="
+                position: absolute;
+                bottom: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+                height: 180px;
+                pointer-events: none;
+              "
+            >
+              <!-- Horizontal Dashboard Visual -->
+              <div
+                style="
+                  width: 100%;
+                  height: 100%;
+                  background: rgba(255, 255, 255, 0.03);
+                  backdrop-filter: blur(20px);
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  border-top-left-radius: 20px;
+                  border-top-right-radius: 20px;
+                  padding: 20px;
+                  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+                  display: flex;
+                  flex-direction: column;
+                  gap: 15px;
+                "
+              >
+                <!-- Toolbar -->
                 <div
-                  style="width: 25%; height: 100%; background: rgba(255,255,255,0.02); border-radius: 10px; display: flex; flex-direction: column; gap: 8px; padding: 10px;">
-                  <div style="height: 6px; width: 60%; background: rgba(255,255,255,0.1); border-radius: 3px;"></div>
-                  <div style="height: 6px; width: 80%; background: rgba(255,255,255,0.05); border-radius: 3px;"></div>
-                  <div style="height: 6px; width: 70%; background: rgba(255,255,255,0.05); border-radius: 3px;"></div>
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                  "
+                >
+                  <div style="display: flex; gap: 8px">
+                    <div
+                      style="
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background: #ff5f56;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background: #ffbd2e;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background: #27c93f;
+                      "
+                    ></div>
+                  </div>
+                  <div
+                    style="
+                      height: 6px;
+                      width: 100px;
+                      background: rgba(255, 255, 255, 0.1);
+                      border-radius: 3px;
+                    "
+                  ></div>
                 </div>
-                <!-- Grid Content -->
-                <div style="flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <!-- Main Content Area -->
+                <div style="display: flex; gap: 15px; flex: 1">
+                  <!-- Sidebar -->
                   <div
-                    style="background: linear-gradient(135deg, rgba(176, 38, 255, 0.2), rgba(77, 77, 255, 0.1)); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
+                    style="
+                      width: 25%;
+                      height: 100%;
+                      background: rgba(255, 255, 255, 0.02);
+                      border-radius: 10px;
+                      display: flex;
+                      flex-direction: column;
+                      gap: 8px;
+                      padding: 10px;
+                    "
+                  >
+                    <div
+                      style="
+                        height: 6px;
+                        width: 60%;
+                        background: rgba(255, 255, 255, 0.1);
+                        border-radius: 3px;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        height: 6px;
+                        width: 80%;
+                        background: rgba(255, 255, 255, 0.05);
+                        border-radius: 3px;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        height: 6px;
+                        width: 70%;
+                        background: rgba(255, 255, 255, 0.05);
+                        border-radius: 3px;
+                      "
+                    ></div>
                   </div>
+                  <!-- Grid Content -->
                   <div
-                    style="background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
-                  </div>
-                  <div
-                    style="background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
-                  </div>
-                  <div
-                    style="background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
-                  </div>
-                  <div
-                    style="background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
-                  </div>
-                  <div
-                    style="background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
+                    style="
+                      flex: 1;
+                      display: grid;
+                      grid-template-columns: repeat(3, 1fr);
+                      gap: 10px;
+                    "
+                  >
+                    <div
+                      style="
+                        background: linear-gradient(
+                          135deg,
+                          rgba(176, 38, 255, 0.2),
+                          rgba(77, 77, 255, 0.1)
+                        );
+                        border-radius: 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.05);
+                      "
+                    ></div>
+                    <div
+                      style="
+                        background: rgba(255, 255, 255, 0.02);
+                        border-radius: 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.05);
+                      "
+                    ></div>
+                    <div
+                      style="
+                        background: rgba(255, 255, 255, 0.02);
+                        border-radius: 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.05);
+                      "
+                    ></div>
+                    <div
+                      style="
+                        background: rgba(255, 255, 255, 0.02);
+                        border-radius: 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.05);
+                      "
+                    ></div>
+                    <div
+                      style="
+                        background: rgba(255, 255, 255, 0.02);
+                        border-radius: 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.05);
+                      "
+                    ></div>
+                    <div
+                      style="
+                        background: rgba(255, 255, 255, 0.02);
+                        border-radius: 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.05);
+                      "
+                    ></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-
-        <!-- Item 2: Mobile Dev -->
-        <div class="bento-item reveal-text" style="transition-delay: 0.2s;">
-          <div class="bento-bg"
-            style="background: radial-gradient(circle at bottom left, rgba(77, 77, 255, 0.1), transparent 60%);"></div>
-          <div style="position: relative; z-index: 2;">
-            <h3>Mobile Dev</h3>
-            <p>React Native, Firebase. Performance native.</p>
-          </div>
-          <div
-            style="margin-top: auto; width: 100%; height: 120px; background: #1e1e1e; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.05); position: relative; z-index: 2;">
-            <div style="background: #252526; padding: 8px; display: flex; gap: 4px;">
-              <div style="width: 8px; height: 8px; border-radius: 50%; background: #ff5f56;"></div>
-              <div style="width: 8px; height: 8px; border-radius: 50%; background: #ffbd2e;"></div>
-              <div style="width: 8px; height: 8px; border-radius: 50%; background: #27c93f;"></div>
+          <!-- Item 2: Mobile Dev -->
+          <div class="bento-item reveal-text" style="transition-delay: 0.2s">
+            <div
+              class="bento-bg"
+              style="
+                background: radial-gradient(
+                  circle at bottom left,
+                  rgba(77, 77, 255, 0.1),
+                  transparent 60%
+                );
+              "
+            ></div>
+            <div style="position: relative; z-index: 2">
+              <h3>Mobile Dev</h3>
+              <p>React Native, Firebase. Performance native.</p>
             </div>
             <div
-              style="padding: 10px; font-family: 'Courier New', monospace; font-size: 0.6rem; color: #d4d4d4; line-height: 1.4;">
-              <div><span style="color: #569cd6;">const</span> <span style="color: #dcdcaa;">App</span> = () => {</div>
-              <div style="padding-left: 10px;"><span style="color: #c586c0;">return</span> (</div>
-              <div style="padding-left: 20px;">&lt;<span style="color: #4ec9b0;">View</span>&gt;</div>
-              <div style="padding-left: 30px;">&lt;<span style="color: #4ec9b0;">Text</span>&gt;Hello&lt;/<span
-                  style="color: #4ec9b0;">Text</span>&gt;</div>
-              <div style="padding-left: 20px;">&lt;/<span style="color: #4ec9b0;">View</span>&gt;</div>
-              <div style="padding-left: 10px;">);</div>
+              style="
+                margin-top: auto;
+                width: 100%;
+                height: 120px;
+                background: #1e1e1e;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+                position: relative;
+                z-index: 2;
+              "
+            >
+              <div
+                style="
+                  background: #252526;
+                  padding: 8px;
+                  display: flex;
+                  gap: 4px;
+                "
+              >
+                <div
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: #ff5f56;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: #ffbd2e;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: #27c93f;
+                  "
+                ></div>
+              </div>
+              <div
+                style="
+                  padding: 10px;
+                  font-family: &quot;Courier New&quot;, monospace;
+                  font-size: 0.6rem;
+                  color: #d4d4d4;
+                  line-height: 1.4;
+                "
+              >
+                <div>
+                  <span style="color: #569cd6">const</span>
+                  <span style="color: #dcdcaa">App</span> = () => {
+                </div>
+                <div style="padding-left: 10px">
+                  <span style="color: #c586c0">return</span> (
+                </div>
+                <div style="padding-left: 20px">
+                  &lt;<span style="color: #4ec9b0">View</span>&gt;
+                </div>
+                <div style="padding-left: 30px">
+                  &lt;<span style="color: #4ec9b0">Text</span
+                  >&gt;Hello&lt;/<span style="color: #4ec9b0">Text</span>&gt;
+                </div>
+                <div style="padding-left: 20px">
+                  &lt;/<span style="color: #4ec9b0">View</span>&gt;
+                </div>
+                <div style="padding-left: 10px">);</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Item 3: Strategy -->
-        <div class="bento-item reveal-text" style="transition-delay: 0.3s;">
-          <div class="bento-bg"
-            style="background: radial-gradient(circle at center, rgba(0, 243, 255, 0.1), transparent 60%);"></div>
-          <div style="position: relative; z-index: 2;">
-            <h3>Strategy</h3>
-            <p>ASO, SEO, Growth. On fait décoller votre app.</p>
-          </div>
-          <div
-            style="margin-top: auto; width: 100%; height: 120px; position: relative; z-index: 2; display: flex; align-items: flex-end; justify-content: space-around; padding-bottom: 10px;">
-            <div style="width: 12%; height: 30%; background: rgba(255,255,255,0.05); border-radius: 3px 3px 0 0;"></div>
-            <div style="width: 12%; height: 50%; background: rgba(255,255,255,0.05); border-radius: 3px 3px 0 0;"></div>
-            <div style="width: 12%; height: 40%; background: rgba(255,255,255,0.05); border-radius: 3px 3px 0 0;"></div>
+          <!-- Item 3: Strategy -->
+          <div class="bento-item reveal-text" style="transition-delay: 0.3s">
             <div
-              style="width: 12%; height: 70%; background: linear-gradient(to top, rgba(0, 243, 255, 0.2), rgba(0, 243, 255, 0.5)); border-radius: 3px 3px 0 0; box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);">
+              class="bento-bg"
+              style="
+                background: radial-gradient(
+                  circle at center,
+                  rgba(0, 243, 255, 0.1),
+                  transparent 60%
+                );
+              "
+            ></div>
+            <div style="position: relative; z-index: 2">
+              <h3>Strategy</h3>
+              <p>ASO, SEO, Growth. On fait décoller votre app.</p>
             </div>
+            <div
+              style="
+                margin-top: auto;
+                width: 100%;
+                height: 120px;
+                position: relative;
+                z-index: 2;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-around;
+                padding-bottom: 10px;
+              "
+            >
+              <div
+                style="
+                  width: 12%;
+                  height: 30%;
+                  background: rgba(255, 255, 255, 0.05);
+                  border-radius: 3px 3px 0 0;
+                "
+              ></div>
+              <div
+                style="
+                  width: 12%;
+                  height: 50%;
+                  background: rgba(255, 255, 255, 0.05);
+                  border-radius: 3px 3px 0 0;
+                "
+              ></div>
+              <div
+                style="
+                  width: 12%;
+                  height: 40%;
+                  background: rgba(255, 255, 255, 0.05);
+                  border-radius: 3px 3px 0 0;
+                "
+              ></div>
+              <div
+                style="
+                  width: 12%;
+                  height: 70%;
+                  background: linear-gradient(
+                    to top,
+                    rgba(0, 243, 255, 0.2),
+                    rgba(0, 243, 255, 0.5)
+                  );
+                  border-radius: 3px 3px 0 0;
+                  box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+                "
+              ></div>
 
-            <!-- Mini Trend line SVG -->
-            <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: visible;">
-              <path d="M 10 100 Q 50 80 100 50 T 200 20" fill="none" stroke="#fff" stroke-width="1.5"
-                stroke-dasharray="3,3" />
-              <circle cx="200" cy="20" r="3" fill="#fff" />
-            </svg>
-          </div>
-        </div>
-
-        <!-- Item 4: Automation & AI -->
-        <div class="bento-item bento-span-2 reveal-text" style="transition-delay: 0.4s;">
-          <div class="bento-bg"
-            style="background: radial-gradient(circle at center, rgba(255, 38, 168, 0.15), transparent 60%);"></div>
-          <div
-            style="position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem;">
-            <div style="max-width: 40%;">
-              <h3>Automation & AI</h3>
-              <p>Workflows intelligents avec n8n. Connectez vos outils, automatisez vos tâches et intégrez l'IA pour un
-                gain de temps maximal.</p>
-            </div>
-
-            <!-- Workflow Visual Asset -->
-            <div class="workflow-visual"
-              style="flex: 1; height: 180px; position: relative; background: rgba(255,255,255,0.02); border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden;">
-              <!-- Connecting Lines SVG -->
-              <svg width="100%" height="100%" style="position: absolute; top: 0; left: 0;">
-                <!-- Line 1: Trigger to Process -->
-                <path class="flow-line" d="M 60 90 L 160 90" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
-                <!-- Line 2: Process to AI -->
-                <path class="flow-line" d="M 220 90 C 250 90, 250 50, 290 50" stroke="rgba(255,255,255,0.1)"
-                  stroke-width="2" fill="none" />
-                <!-- Line 3: Process to Database -->
-                <path class="flow-line" d="M 220 90 C 250 90, 250 130, 290 130" stroke="rgba(255,255,255,0.1)"
-                  stroke-width="2" fill="none" />
-
-                <!-- Animated Particles -->
-                <circle r="3" fill="#ff26a8">
-                  <animateMotion repeatCount="indefinite" dur="2s" path="M 60 90 L 160 90" />
-                  <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
-                </circle>
-                <circle r="3" fill="#ff26a8">
-                  <animateMotion repeatCount="indefinite" dur="2s" begin="1s"
-                    path="M 220 90 C 250 90, 250 50, 290 50" />
-                  <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite" />
-                </circle>
+              <!-- Mini Trend line SVG -->
+              <svg
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  overflow: visible;
+                "
+              >
+                <path
+                  d="M 10 100 Q 50 80 100 50 T 200 20"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-dasharray="3,3"
+                />
+                <circle cx="200" cy="20" r="3" fill="#fff" />
               </svg>
+            </div>
+          </div>
 
-              <!-- Node 1: Trigger (Webhook) -->
-              <div class="flow-node" style="left: 30px; top: 60px;">
-                <div class="node-icon" style="background: #ffbd2e;">⚡️</div>
-                <div class="node-label">Trigger</div>
+          <!-- Item 4: Automation & AI -->
+          <div
+            class="bento-item bento-span-2 reveal-text"
+            style="transition-delay: 0.4s"
+          >
+            <div
+              class="bento-bg"
+              style="
+                background: radial-gradient(
+                  circle at center,
+                  rgba(255, 38, 168, 0.15),
+                  transparent 60%
+                );
+              "
+            ></div>
+            <div
+              style="
+                position: relative;
+                z-index: 2;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 2rem;
+              "
+            >
+              <div style="max-width: 40%">
+                <h3>Automation & AI</h3>
+                <p>
+                  Workflows intelligents avec n8n. Connectez vos outils,
+                  automatisez vos tâches et intégrez l'IA pour un gain de temps
+                  maximal.
+                </p>
               </div>
 
-              <!-- Node 2: Process (n8n) -->
-              <div class="flow-node" style="left: 160px; top: 60px;">
-                <div class="node-icon" style="background: #ff26a8;">n8n</div>
-                <div class="node-label">Process</div>
-              </div>
+              <!-- Workflow Visual Asset -->
+              <div
+                class="workflow-visual"
+                style="
+                  flex: 1;
+                  height: 180px;
+                  position: relative;
+                  background: rgba(255, 255, 255, 0.02);
+                  border-radius: 15px;
+                  border: 1px solid rgba(255, 255, 255, 0.05);
+                  overflow: hidden;
+                "
+              >
+                <!-- Connecting Lines SVG -->
+                <svg
+                  width="100%"
+                  height="100%"
+                  style="position: absolute; top: 0; left: 0"
+                >
+                  <!-- Line 1: Trigger to Process -->
+                  <path
+                    class="flow-line"
+                    d="M 60 90 L 160 90"
+                    stroke="rgba(255,255,255,0.1)"
+                    stroke-width="2"
+                  />
+                  <!-- Line 2: Process to AI -->
+                  <path
+                    class="flow-line"
+                    d="M 220 90 C 250 90, 250 50, 290 50"
+                    stroke="rgba(255,255,255,0.1)"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <!-- Line 3: Process to Database -->
+                  <path
+                    class="flow-line"
+                    d="M 220 90 C 250 90, 250 130, 290 130"
+                    stroke="rgba(255,255,255,0.1)"
+                    stroke-width="2"
+                    fill="none"
+                  />
 
-              <!-- Node 3: AI (Brain) -->
-              <div class="flow-node" style="left: 290px; top: 20px;">
-                <div class="node-icon" style="background: #00f3ff; font-size: 1.2rem;">🧠</div>
-                <div class="node-label">AI Analysis</div>
-              </div>
+                  <!-- Animated Particles -->
+                  <circle r="3" fill="#ff26a8">
+                    <animateMotion
+                      repeatCount="indefinite"
+                      dur="2s"
+                      path="M 60 90 L 160 90"
+                    />
+                    <animate
+                      attributeName="opacity"
+                      values="0;1;0"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                  <circle r="3" fill="#ff26a8">
+                    <animateMotion
+                      repeatCount="indefinite"
+                      dur="2s"
+                      begin="1s"
+                      path="M 220 90 C 250 90, 250 50, 290 50"
+                    />
+                    <animate
+                      attributeName="opacity"
+                      values="0;1;0"
+                      dur="2s"
+                      begin="1s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                </svg>
 
-              <!-- Node 4: Database -->
-              <div class="flow-node" style="left: 290px; top: 100px;">
-                <div class="node-icon" style="background: #27c93f;">💾</div>
-                <div class="node-label">Store</div>
+                <!-- Node 1: Trigger (Webhook) -->
+                <div class="flow-node" style="left: 30px; top: 60px">
+                  <div class="node-icon" style="background: #ffbd2e">⚡️</div>
+                  <div class="node-label">Trigger</div>
+                </div>
+
+                <!-- Node 2: Process (n8n) -->
+                <div class="flow-node" style="left: 160px; top: 60px">
+                  <div class="node-icon" style="background: #ff26a8">n8n</div>
+                  <div class="node-label">Process</div>
+                </div>
+
+                <!-- Node 3: AI (Brain) -->
+                <div class="flow-node" style="left: 290px; top: 20px">
+                  <div
+                    class="node-icon"
+                    style="background: #00f3ff; font-size: 1.2rem"
+                  >
+                    🧠
+                  </div>
+                  <div class="node-label">AI Analysis</div>
+                </div>
+
+                <!-- Node 4: Database -->
+                <div class="flow-node" style="left: 290px; top: 100px">
+                  <div class="node-icon" style="background: #27c93f">💾</div>
+                  <div class="node-label">Store</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="contact" class="container" style="text-align: center">
+        <h2 class="reveal-text">Ready to scale?</h2>
+        <p class="reveal-text" style="transition-delay: 0.1s">
+          Votre prochain projet commence ici.
+        </p>
+        <div
+          class="reveal-text"
+          style="transition-delay: 0.2s; margin-top: 3rem"
+        >
+          <a href="mailto:adrien.marchetti@studiomlabs.com" class="btn-magnetic"
+            >Parlons-en</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-v2">
+      <div class="container">
+        <div class="footer-big-text">STUDIO M</div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: -4rem;
+            position: relative;
+            z-index: 2;
+          "
+        >
+          <a
+            href="mentions-legales.html"
+            style="color: var(--text-muted); font-size: 0.9rem"
+            >Mentions Légales</a
+          >
+          <a
+            href="confidentialite.html"
+            style="color: var(--text-muted); font-size: 0.9rem"
+            >Confidentialité</a
+          >
+          <a href="cgv.html" style="color: var(--text-muted); font-size: 0.9rem"
+            >CGV</a
+          >
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.8rem; color: #444">
+          &copy; 2025 Studio M. All rights reserved.
+        </p>
       </div>
-    </section>
+    </footer>
 
-    <section id="contact" class="container" style="text-align: center;">
-      <h2 class="reveal-text">Ready to scale?</h2>
-      <p class="reveal-text" style="transition-delay: 0.1s;">Votre prochain projet commence ici.</p>
-      <div class="reveal-text" style="transition-delay: 0.2s; margin-top: 3rem;">
-        <a href="mailto:adrien.marchetti@studiomlabs.com" class="btn-magnetic">Parlons-en</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer-v2">
-    <div class="container">
-      <div class="footer-big-text">STUDIO M</div>
-      <div
-        style="display: flex; justify-content: center; gap: 2rem; margin-top: -4rem; position: relative; z-index: 2;">
-        <a href="mentions-legales.html" style="color: var(--text-muted); font-size: 0.9rem;">Mentions Légales</a>
-        <a href="confidentialite.html" style="color: var(--text-muted); font-size: 0.9rem;">Confidentialité</a>
-        <a href="cgv.html" style="color: var(--text-muted); font-size: 0.9rem;">CGV</a>
-      </div>
-      <p style="margin-top: 2rem; font-size: 0.8rem; color: #444;">&copy; 2025 Studio M. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+  </body>
 </html>
